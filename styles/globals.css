@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; 
+    background-color: #f0f0f0; /* Color de fondo de la página */
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para el header */
+header {
+    background-color: #0070f3; /* Color de fondo del header */
+    color: white; /* Color del texto del header */
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #0070f3; /* Color de fondo del footer */
+    color: white; /* Color del texto del footer */
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Estilos para el contenedor de inicio de sesión */
+.inicioSesion {
+    max-width: 500px;
+    color: white;
+    padding: 20px;
+    background-color: brown;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.inicioSesion p,
+.inicioSesion h1,
+.mensaje-exito h1 {
+    color: rgb(252, 252, 252);
+}
+
+/* Estilos para los labels y inputs */
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif; 
+}
+
+/* Estilos para enlaces */
+.inicioSesion a {
+    color: rgb(252, 252, 252);
+}
+
+/* Estilos para el botón de envío */
+button {
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255); /* Color de fondo del botón */
+    color: #000000; /* Color del texto en el botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(96, 50, 50); 
+}
+
+button:active {
+    background-color: white; /* Color de fondo cuando el botón está presionado */
+}
+
+/* Mensajes de error */
+.error-message {
+    color: rgb(252, 252, 252);
+    margin-bottom: 15px;
+}
+
+/* Estilos para el contenedor de crear cuenta */
+.CrearC {
+    max-width: 500px;
+    color: white;
+    padding: 20px;
+    background-color: brown;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.CrearC h1,
+.CrearC a {
+    color: white;
+}
+
+/* Estilos para mensaje de éxito */
+.mensaje-exito {
+    max-width: 500px;
+    color: white;
+    padding: 20px;
+    background-color: brown;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Asegurar que todos los inputs y botones usen la misma fuente */
+input,
+button {
+    font-family: "Montserrat", sans-serif !important; 
+}

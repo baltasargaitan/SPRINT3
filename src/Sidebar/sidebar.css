@@ -1,0 +1,84 @@
+/* Contenedor del sidebar y el botón de toggling */
+.sidebar-container {
+    position: relative;
+    display: flexbox;
+    
+
+  }
+
+  .sidebar-container.sidebar {
+    background-color: yellow;
+    color: aqua;
+  }
+  /* Cuando el sidebar está abierto, se desplaza hacia la vista */
+  .sidebar.open {
+    transform: translateX(0); 
+    background-color: brown;  
+  }
+
+  /* Estilos para el botón de toggling del sidebar */
+  .sidebar-toggle {
+    position: relatives;
+    top: 50%;
+    color: brown;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px; /* Tamaño del botón */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra del botón de toggle */
+    z-index: 1001; /* Asegúrate de que el botón esté sobre el sidebar */
+    transition: background-color 0.4s ease; /* Suaviza el color del botón en hover */
+    transition: transform 0.3s ease; /* Suaviza el color del botón en hover */
+  }
+
+  /* Cambia el color del botón cuando el sidebar está abierto */
+.sidebar-toggle.open {
+  transform:  translateX(250px);
+  background-color: #6b0000; /* Cambia el color si es necesario */
+}
+.sidebar-container button {
+  background-color: #6b0000;
+  border: 1px solid white;
+}
+.sidebar-toggle  {
+  color: brown;
+  position: relative;
+  left:5px;
+}
+
+
+  /* Color del botón cuando está en hover */
+  .sidebar-toggle:hover {
+    padding: 0;
+    background-color: #682e2e; /* Color del botón cuando está en hover */
+  }
+
+  .sidebar.open ul li:first-child {
+
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    
+  } 
+  .sidebar.open ul li {
+
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+
+    padding: 10px;
+    
+  }
+  .sidebar.open ul li a:hover {
+    padding: 20px;
+    background-color: brown;
+    transition: 0.4s ease; /* Suaviza el color del botón en hover */
+
+
+  }
+
+.sidebar.open ul {
+  position: relative;
+  top: 10rem;
+}
